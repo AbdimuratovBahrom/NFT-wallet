@@ -1,0 +1,603 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(./fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url(./fonts/Kanit-SemiBold.ttf);
+}
+
+
+
+body {
+  height: 100%;
+  background-image: url(./images/site-Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --second-family: "Kanit", sans-serif;
+}
+
+header {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.header_logo-nav {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.header_logo h3 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 75%;
+  color: #f9fbfb;
+
+}
+
+.header_logo h3:hover {
+  transition: all ease-in 0.5s;
+  color: #CC4629;
+}
+
+.header_nav ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.header_nav li a {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #f9fbfb;
+  text-decoration: none;
+
+}
+
+.header_nav li a:hover {
+  transition: all ease-in 0.5s;
+  color: #CC4629;
+}
+
+.header_buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.uploud-btn a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 30px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 167%;
+  color: #f9fbfb;
+  text-decoration: none;
+}
+
+.uploud-btn a:hover {
+  transition: all ease-in 0.5s;
+  color: #CC4629;
+}
+
+.wallet-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 217px;
+  height: 65px;
+  background: #7b57fe;
+}
+
+.wallet-btn:active {
+  position: relative;
+  top: 3px;
+}
+
+.wallet-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: none;
+  border: none;
+
+}
+
+.wallet-btn button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 167%;
+  color: #f9fbfb;
+  text-decoration: none;
+
+}
+
+.wallet-btn button a:hover {
+  transition: all ease-in 0.5s;
+  color: #CC4629;
+
+}
+
+.container {
+
+  padding: 15px;
+}
+
+.discover__box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.discover__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  bottom: 230px;
+}
+
+.discover__block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.discover__block h6 {
+  max-width: 574px;
+  font: 500 76px / 118% var(--second-family);
+  text-transform: capitalize;
+  color: #f9fbfb;
+  position: relative;
+  bottom: 80px;
+
+}
+
+.discover__text p {
+  max-width: 428px;
+  font: 400 18px / 189% var(--font-family);
+  color: rgba(200, 200, 200, 0.8);
+
+}
+
+.discover__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 65px;
+}
+
+.more_btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  width: 185px;
+  height: 71px;
+  background: #7b57fe;
+  font: 500 18px / 189% var(--font-family);
+  color: #fff;
+  text-decoration: none;
+}
+
+.more_btn a:hover {
+  transition: all ease-in 0.5s;
+  background: transparent;
+  border: 1px solid #7b57fe;
+}
+
+.more_btn a:active {
+  position: relative;
+  top: 2px;
+}
+
+
+.NFTs_btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  width: 185px;
+  height: 71px;
+  border: 2px solid #7b57fe;
+  font: 500 18px / 189% var(--font-family);
+  text-align: center;
+  color: #f9fbfb;
+  text-decoration: none;
+}
+
+.NFTs_btn a:hover {
+  transition: all ease-in 0.5s;
+  background: #7b57fe;
+}
+
+.NFTs_btn a:active {
+  position: relative;
+  top: 2px;
+}
+
+
+.discover__couter {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+
+}
+
+.couter__1 {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+}
+
+.couter__1 h5 {
+  font: 600 56px / 118% var(--second-family);
+  text-align: center;
+  color: #f9fbfb;
+}
+
+.couter__1 p {
+  font: 400 22px / 136% var(--font-family);
+  text-align: center;
+  color: #a1a1a1;
+  position: relative;
+  bottom: 80px;
+}
+
+.discover__main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* .discover__box {
+display: flex;
+flex-direction: column;
+align-items: center;
+  gap: 30px;
+} */
+
+.dis__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.discover__cards1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 30px;
+  position: relative;
+  top: 160px;
+}
+
+
+.discover__card-col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  top: 150px;
+}
+
+
+.discover__card-col2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  top: 100px;
+}
+
+.discover__card1 a {
+  text-decoration: none;
+}
+
+.discover__card1:hover {
+  transition: all ease-in-out 0.4s;
+  transform: scale(1.04);
+}
+
+.discover__card1 {
+
+  border-radius: 14px;
+  width: 250px;
+  height: 330px;
+  background: #a480d2;
+}
+
+.discover__card1 img {
+  padding: 8px;
+}
+
+.discover__card3 {
+
+  border-radius: 14px;
+  width: 250px;
+  height: 330px;
+  background: #9a2331;
+}
+
+.discover__card3 img {
+  padding: 8px;
+}
+
+.discover__card3 a {
+  text-decoration: none;
+}
+
+.discover__card3:hover {
+  transition: all ease-in-out 0.4s;
+  transform: scale(1.04);
+}
+
+.discover__card2 {
+
+  border-radius: 14px;
+  width: 250px;
+  height: 330px;
+  background: #cb3800;
+}
+
+.discover__card2 img {
+  padding: 8px;
+}
+
+.discover__card2 a {
+  text-decoration: none;
+}
+
+.discover__card2:hover {
+  transition: all ease-in-out 0.4s;
+  transform: scale(1.04);
+}
+
+
+.discover__card4 {
+
+  border-radius: 14px;
+  width: 250px;
+  height: 330px;
+  background: #338ab2;
+}
+
+.discover__card4 img {
+  padding: 8px;
+}
+
+.discover__card4 a {
+  text-decoration: none;
+}
+
+.discover__card4:hover {
+  transition: all ease-in-out 0.4s;
+  transform: scale(1.04);
+}
+
+.price__row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+  padding: 0 20px;
+  bottom: 30px;
+
+}
+
+
+
+.timer__new-year {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+
+}
+
+.timer__h {
+  position: relative;
+  bottom: 50px;
+}
+
+.timer__h h2 {
+
+  color: #fff;
+  font-family: "Altsys Fontografer";
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 58px;
+}
+
+
+.timer__items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font: 500 15px / 189% var(--font-family);
+  color: rgba(255, 255, 255, 0.9);
+
+}
+
+.timer__item {
+
+  position: relative;
+  /* min-width: 60px; */
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+
+}
+
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+}
+
+.timer__item:not(:last-child)::after {
+  content: ':';
+  position: absolute;
+  right: -15px;
+}
+
+.card__price h6 {
+  font: 500 15px / 189% var(--font-family);
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 16px;
+}
+
+.price__row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.price__row2 p {
+  font: 400 10px / 167% var(--font-family);
+  color: rgba(255, 249, 242, 0.8);
+}
+
+
+
+footer p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+  font: 400 14px / 189% var(--font-family);
+  color: rgba(200, 200, 200, 0.8);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1180px) {
+  .dis__cards {
+    position: relative;
+    bottom: 350px;
+
+  }
+}
+
+
+
+
+@media (max-width: 560px) {
+  .header_logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  .discover__block h6 {
+    max-width: 404px;
+    font: 400 56px / 118% var(--second-family);
+    text-transform: capitalize;
+    color: #f9fbfb;
+    position: relative;
+    bottom: 80px;
+  }
+
+  .discover__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .discover__text p {
+    max-width: 300px;
+
+  }
+
+  .dis__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .couter__1 h5 {
+    font: 500 36px / 118% var(--second-family);
+    text-align: center;
+    color: #f9fbfb;
+  }
+
+  .couter__1 p {
+    font: 400 14px / 136% var(--font-family);
+    text-align: center;
+    color: #a1a1a1;
+    position: relative;
+    bottom: 40px;
+  }
+}
+
+
+@media (max-width: 434px) {
+  .discover__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+  }
+
+
+
+
+
+}
